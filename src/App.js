@@ -20,9 +20,9 @@ const App = () => {
   const [status, setStatus] = useState("all");
   const [filtered, setFiltered] = useState([]);
   const [alert, setAlert] = useState({
-    show: false,
-    msg: "",
-    type: "",
+    show: true,
+    msg: "asda",
+    type: "danger",
   });
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -127,7 +127,7 @@ const App = () => {
     <section className='section-center'>
       <form className='list-form' onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
-        <h3>to dos</h3>
+        <h3>My To Dos</h3>
         <div className='form-control'>
           <input
             type='text'
@@ -137,7 +137,7 @@ const App = () => {
             onChange={(e) => setName(e.target.value)}
           />
           <button type='submit' className='submit-btn'>
-            {isEditing ? "edit" : "submit"}
+            {isEditing ? "edit" : "add"}
           </button>
         </div>
         <div className='form-control '>
@@ -178,7 +178,7 @@ const App = () => {
             filtered={filtered}
           />
           <button className='clear-btn' onClick={clearList}>
-            clear to dos
+            clear all to dos
           </button>
         </div>
       )}
