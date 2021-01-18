@@ -22,7 +22,7 @@ const App = () => {
   const [alert, setAlert] = useState({
     show: false,
     msg: "",
-    type: "",
+    type: "danger",
   });
   const handleSubmit = (e) => {
     e.preventDefault();
