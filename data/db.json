@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "title": "Wake Up",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Make Breakfast",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Exercise",
+      "completed": true
+    }
+  ]
+}
