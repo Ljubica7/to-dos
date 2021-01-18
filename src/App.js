@@ -20,9 +20,9 @@ const App = () => {
   const [status, setStatus] = useState("all");
   const [filtered, setFiltered] = useState([]);
   const [alert, setAlert] = useState({
-    show: true,
-    msg: "asda",
-    type: "danger",
+    show: false,
+    msg: "",
+    type: "",
   });
   const handleSubmit = (e) => {
     e.preventDefault();
