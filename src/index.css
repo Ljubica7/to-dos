@@ -146,18 +146,21 @@ h3 {
 }
 
 .edit-btn {
+  position: relative;
   color: hsl(125, 71%, 66%);
 }
 .edit-btn:hover {
   color: hsl(125, 67%, 44%);
 }
 .delete-btn {
+  position: relative;
   color: hsl(360, 71%, 66%);
 }
 .delete-btn:hover {
   color: hsl(360, 67%, 44%);
 }
 .check-btn {
+  position: relative;
   color: hsl(209, 61%, 16%);
 }
 .check-btn:hover {
@@ -199,4 +202,25 @@ h3 {
   background-color: hsl(210, 36%, 96%);
   color: hsl(210, 22%, 49%);
   text-decoration: line-through;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 1.5em;
+  left: -2.1em;
+
+  z-index: 1;
+}
+
+.check-btn:hover .tooltiptext,
+.edit-btn:hover .tooltiptext,
+.delete-btn:hover .tooltiptext {
+  visibility: visible;
 }

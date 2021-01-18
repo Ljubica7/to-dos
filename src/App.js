@@ -94,7 +94,7 @@ const App = () => {
       case "completed":
         setFiltered(list.filter((item) => item.completed));
         break;
-      case "uncompleted":
+      case "incompleted":
         setFiltered(list.filter((item) => !item.completed));
         break;
       default:
@@ -160,10 +160,10 @@ const App = () => {
           <button
             type='button'
             className='btn status-btn'
-            value='uncompleted'
+            value='incompleted'
             onClick={statusHandler}
           >
-            uncompleted
+            incompleted
           </button>
         </div>
       </form>

@@ -19,6 +19,7 @@ const List = ({ items, removeItem, editItem, completeToggle, filtered }) => {
                 type='button'
                 onClick={() => completeToggle(id)}
               >
+                <span class='tooltiptext'>Check</span>
                 <FaCheckSquare />
               </button>
               <button
@@ -26,6 +27,7 @@ const List = ({ items, removeItem, editItem, completeToggle, filtered }) => {
                 type='button'
                 onClick={() => editItem(id)}
               >
+                <span class='tooltiptext'>Edit</span>
                 <FaEdit />
               </button>
               <button
@@ -33,6 +35,7 @@ const List = ({ items, removeItem, editItem, completeToggle, filtered }) => {
                 type='button'
                 onClick={() => removeItem(id)}
               >
+                <span class='tooltiptext'>Delete</span>
                 <FaTrash />
               </button>
             </div>
